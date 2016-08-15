@@ -11,7 +11,7 @@ Exiting Loops Lab
 
 Now that we've had some practice breaking out of loops, it's time to break free and practice a bit without training wheels.
 
-In `loops.js`, you'll have to define a few functions:
+In `index.js`, you'll have to define a few functions:
 
 - `breakOut(array, changeValue, stopValue)` which iterates through `array` and changes every element to `changeValue` until the loop reaches `stopValue`. Then we `break` out of the loop and return the array.
 - `keepGoing(array, changeValue, skipValue)` which iterates through `array` and changes every element to `changeValue` except those that match `skipValue`. Then return the array.
@@ -23,3 +23,5 @@ Good luck!
 
 - [break](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break)
 - [continue](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/exiting-loops-lab'>Exiting Loops Lab</a> on Learn.co and start learning to code for free.</p>
