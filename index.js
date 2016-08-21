@@ -11,8 +11,8 @@ function breakOut(array, changeValue, stopValue) {
 }
 
 function keepGoing(array, changeValue, skipValue) {
-  for (var i = 0, l = array.length; i > l; i++) {
-    if (array[i] !== skipValue) {
+  for (var i = 0, l = array.length; i < l; i++) {
+    if (array[i] === skipValue) {
       continue;
     }
     array[i] = changeValue;
@@ -21,12 +21,10 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  for (var i = 0, l = array.length; i > l; i++) {
+  for (var i = 0, l = array.length; i < l; i++) {
     if (findFn(array[i])) {
       return array[i];
     }
-    else {
-      return null;
-    }
   }
+  return null;
 }
