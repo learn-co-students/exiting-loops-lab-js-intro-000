@@ -27,11 +27,11 @@ function findFn(seed){
 }
 
 function findBy(array, callBack){
-  var testValue = callBack(5)
-  console.log(testValue)
+
   console.log(array)
   for(var i=0,l=array.length;i<l;i++){
-    if(array[i]==testValue){
+
+  if(callBack(array[i])){
       return array[i]
     }
   }
