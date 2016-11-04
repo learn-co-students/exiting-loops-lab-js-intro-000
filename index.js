@@ -1,29 +1,31 @@
 function breakOut(array, changeValue, stopValue) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === stopValue) {
-      return array;
+      break
     } else {
-      array[i] = changeValue;
+      array[i] = changeValue
     }
   }
+  return array
 }
 
 function keepGoing(array, changeValue, skipValue) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === skipValue) {
-      continue;
+      continue
     } else {
-      array[i] = changeValue;
+      array[i] = changeValue
     }
   }
-  return array;
+  return array
 }
 
 function findBy(array, findFn) {
   for (let i = 0; i < array.length; i++) {
+    debugger
     if (findFn(array[i])) {
-      return array[i];
+      return array[i]
     }
   }
-  return null;
+  return null
 }
