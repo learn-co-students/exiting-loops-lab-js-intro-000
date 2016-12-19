@@ -19,7 +19,7 @@ return array// and return the array
 }
 function findBy(array, findFn){
   for (let i = 0, l = array.length; i < l; i++){
-    if(array[i] !== findFn){
+    if(array[i] => findFn){
        return null
 }
 }
