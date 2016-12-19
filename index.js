@@ -4,7 +4,6 @@ function breakOut(array, changeValue, stopValue){
     break
   }
     array[i]=changeValue
-
-      return array
 }
+return array
 }
