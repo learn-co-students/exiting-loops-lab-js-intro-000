@@ -1,3 +1,5 @@
+
+
 function breakOut(array, changeValue, stopValue){
   for(var i = 0; i < array.length; i++){
     if(array[i]===stopValue){
@@ -20,7 +22,7 @@ function keepGoing(array, changeValue, skipValue){
   return array;
 }
 
-//Long one...
+//Long one...Thought I needed a foreach..confusing
 function findBy(array, findFn) {
   for (let i = 0, l = array.length; i < l; i++) {
    if (findFn(array[i])) {
