@@ -28,11 +28,12 @@ function findBy(array, findFn) {
   return null;
 }
 
-/*function findBy(array, findFn) {
-  array.forEach(element => {
-    if (findFn(element)) {
-       return element;
-    }
-  });
-  return null;
-}*/
+function findBy(array, findFn) {
+   var result = null
+    array.forEach(element => {
+      if (findFn(element)) {
+      result = element;
+     }
+    });
+    return result;
+  }
