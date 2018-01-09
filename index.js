@@ -1,11 +1,12 @@
 function breakOut(array, changeValue, stopValue) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] == stopValue) {
-      return array;
+  for (let i = 0, l = array.length; i < l; i++) {
+    if (array[i] === stopValue) {
       break;
-   }
-   array[i] = changeValue;
- }
+    }
+    array[i] = changeValue;
+  }
+  return array;
+}
 
 function keepGoing(array, changeValue, skipValue) {
   for (let i = 0; i < array.length; i++) {
