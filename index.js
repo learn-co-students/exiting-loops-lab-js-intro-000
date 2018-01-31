@@ -18,14 +18,14 @@ function keepGoing(array, changeValue, skipValue) {
   return array;
 }
 
-function findBy(array, findFn, criteria) {
-  findFn(array, criteria);
+function findBy(array, findFn) {
+  findFn(array);
 }
 
 function find(array, criteria) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === criteria) {
-      return array[i]
+      return array[i];
     }
   }
   return null;
