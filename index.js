@@ -26,15 +26,11 @@ function findBy(array, findFn) {
   var value = ''
   for(var i = 0; i < array.length; i++) {
     if(findFn(array[i])) {
-      value = array[i];
+      return array[i];
     }
   }
 
-if(!value) {
-  return null;
-} else {
-  return value;
-}
+return null;
 
 
 }
