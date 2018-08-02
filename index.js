@@ -9,11 +9,20 @@ function breakOut(array, changeValue, stopValue) {
 }
 
 function keepGoing(array, changeValue, skipValue) {
-    for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
       if (array[i] >= skipValue) {
-         break;
+         continue;
       }
       array[i] = changeValue 
   }
    return array
+}
+
+function findBy(array, findFn) {
+  for (var i = 0; i < array.length; i++) {
+    if (findFn(array[i])) {
+        break; 
+    }
+  }
+  return array[i]
 }
