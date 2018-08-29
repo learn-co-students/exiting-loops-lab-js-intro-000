@@ -5,8 +5,8 @@
 function breakOut(array, changeValue, stopValue){
   for(let i=0; i< array.length; ++i){
       if(array[i] !== stopValue) {
-		array[i] = changeValue
-      } else {
+		      array[i] = changeValue
+      } else { //privilégier logique inverse: array[i] === stopValue (cf ci-dessous)
 	  	    break
       }
   }
@@ -20,7 +20,6 @@ function keepGoing(array, changeValue, skipValue){
   	if(array[i] === skipValue) {
       continue
   	}
-  console.log(i)
   array[i] = changeValue
   }
   return array
