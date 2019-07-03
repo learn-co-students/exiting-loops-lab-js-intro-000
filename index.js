@@ -8,6 +8,8 @@ function breakOut(array, changeValue, stopValue) {
 return array
 }
 
+
+
 function keepGoing(array, changeValue, skipValue) {
     for (let i = 0; i < array.length; i++) {
     if (array[i] !== skipValue) {
@@ -16,10 +18,51 @@ function keepGoing(array, changeValue, skipValue) {
 }
   return array
 }
-function findBy(array, findFn) {
+
+
+function findFn() {
+  return 5
 }
 
-function findBy(array, findFn)
+var array2 = [1, 2, 3, 4, 5]
+
+function findFn() {
+  return 5
+}
+
+
+
+
+// function findBy(array, findFn) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] == findFn()) {
+//       return array[i]
+//     }
+// }
+// return null
+// }
+
+function findBy(array, findFn) {
+  for (let i = 0; i < array.length; i++) {
+    if (findFn(array[i])) {
+      return array[i]
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
