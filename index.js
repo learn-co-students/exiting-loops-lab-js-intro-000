@@ -10,8 +10,6 @@ function breakOut(array,changeValue,stopValue) {
 return array;
 }
 
-
-
 function keepGoing(array,changeValue,skipValue) {
     for(var i=0;i<array.length;i++){
       if(array[i]===skipValue){
