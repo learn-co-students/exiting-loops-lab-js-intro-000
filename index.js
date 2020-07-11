@@ -21,13 +21,13 @@ var keepGoing= (array, changeValue, skipValue) =>{
 var findBy= (array, findFn) =>{
   var a=findFn();
   for(let i=0; i<array.length; i++){
-     if(array[i]===a){
-       return a;
-     }
-     else{
+     if(array[i]!=a){
        if(i===(array.length-1)){
          return null;
        }
+     }
+     else{
+       return a;
      }
   }
 }
