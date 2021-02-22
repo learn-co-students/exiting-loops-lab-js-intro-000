@@ -14,8 +14,8 @@ function keepGoing(array, changeValue, skipValue) {
  for (let i = 0; i < array.length; i++) {
           //array.push(array[i])
   if (array[i] !== skipValue) {
+  	 array[i] = changeValue
   }
-    array[i] = changeValue
  }
   return array 
 }
