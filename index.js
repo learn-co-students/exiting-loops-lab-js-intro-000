@@ -9,13 +9,13 @@ function breakOut(array, changeValue, stopValue) {
   return array 
 }
 
+
 function keepGoing(array, changeValue, skipValue) {
  for (let i = 0; i < array.length; i++) {
           //array.push(array[i])
-  if (array[i] == changeValue) {
-     break
+  if (array[i] !== skipValue) {
   }
-    array[i] = skipValue
+    array[i] = changeValue
  }
   return array 
 }
