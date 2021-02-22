@@ -13,8 +13,8 @@ function breakOut(array, changeValue, stopValue) {
 function keepGoing(array, changeValue, skipValue) {
  for (let i = 0; i < array.length; i++) {
           //array.push(array[i])
-  if (array[i] !== skipValue) {
-  	continue
+  if (array[i] == skipValue) {
+  	continue  //don't necessarily need continue if you use !== above 
   }
     array[i] = changeValue
  }
@@ -22,7 +22,12 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-	//match return value of function to value in array element (iterate over whole array) 
+	for (let i = 0; i < array.length; i++) {
+    if (findFn(array[i])) {
+      return array[i]
+    }
+  }
+  return null 
 }
 
 //expects return value of findBy to equal the search value 
